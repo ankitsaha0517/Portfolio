@@ -122,6 +122,30 @@ nav > ul > li > a > i {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.download{
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  background: #a18a06;
+  padding: 5px 20px;
+  border-radius: 100px;
+  overflow: hidden !important;
+  font-size: 1vw;
+}
+.download a{
+  font-family: 'Gilroy' !important;
+}
+.arr {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.download:hover{
+  filter: brightness(0.8);
+}
+.download:hover .arr {
+  transform: translateY(25px);
 }
 .imgbg {
   position: relative;
@@ -477,6 +501,9 @@ nav > ul > li > a > i {
         height: 50vw;
         width: 50vw;
     }
+    .download{
+      font-size: 1.5vw;
+    }
     .pg2{
         height: fit-content;
         flex-direction: column;
@@ -559,5 +586,8 @@ nav > ul > li > a > i {
     }
     .skill .tecnology {
         justify-content: space-between;
+    }
+    .download {
+      display: NONE;
     }
 }
