@@ -135,7 +135,8 @@ nav > ul > li > a > i {
   font-size: 1vw;
 }
 .download a{
-  font-family: 'Gilroy' !important;
+  font-family: 'AM' !important;
+  letter-spacing: 0.2vw;
 }
 .arr {
   display: inline-block;
