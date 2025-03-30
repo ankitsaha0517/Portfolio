@@ -467,7 +467,7 @@ nav > ul > li > a > i {
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 630px) {
     nav {
         padding: 2vw 7vw;
     }
