@@ -10,7 +10,7 @@ const data = [
     },
     {
         name: "Sundown <br> Studio",
-        video: "./video/dustdio.mp4",
+        video: "./video/sundown.mp4",
         dec: "Developed an interactive web experience with HTML, CSS, and JavaScript, implementing GSAP for seamless animations and enhanced visual appeal.",
         projectLink: "https://ankitsaha0517.github.io/sundown-studio-clone/"
     },
