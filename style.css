@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #070707;
+  color: #fff;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./font/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: AM;
+  src: url(./font/AcerokMages.otf);
+}
+@font-face {
+  font-family: sign;
+  src: url(./font/WhisperingSignature.ttf);
+}
+#main {
+  height: 100%;
+  width: 100%;
+  padding: 0 2vw;
+}
+nav {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  width: 100%;
+  padding: 2vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 3vw;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  font-family: Gilroy;
+  color: #dedede;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+nav > ul > li > a > i {
+  font-size: 2vw;
+}
+.hero {
+  position: relative;
+  padding-top: 8vh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroleft {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.heroleft h1 {
+  font-size: 7vw;
+  text-align: center;
+  font-family: AM;
+  text-transform: capitalize;
+  letter-spacing: 1vw;
+  position: relative;
+  line-height: 9vw;
+  color: #dedede50;
+}
+.heroleft h1::after {
+  position: absolute;
+  content: "full stack developer";
+  height: 3px;
+  width: 80%;
+  z-index: 9;
+  right: 6.5vw;
+  top: 4.5vw;
+  font-size: 1vw;
+  font-family: sign;
+  color: #fff;
+}
+.heroright {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgbg {
+  position: relative;
+  height: 20vw;
+  width: 20vw;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #a18a06;
+}
+.img {
+  top: 8%;
+  left: 4%;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  background: #070707;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+}
+.img img {
+  scale: 1.1;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.pg2 {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  gap: 10vw;
+  padding: 5vh 3vw;
+}
+.about-left {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.section-ltop {
+  width: fit-content;
+}
+.section-ltop p {
+  padding-left: 0.8vw;
+  font-size: 1.6vw;
+  font-family: Gilroy;
+  color: #dedede30;
+}
+.section-ltop h2 {
+  font-size: 7vw;
+  font-family: AM;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  position: relative;
+  line-height: 0.9;
+  color: #dedede50;
+}
+.section-ltop h3 {
+  font-size: 5vw;
+  font-family: sign;
+  color: #dedede;
+  line-height: 0.5;
+  text-align: right;
+}
+.about-dec {
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-dec p {
+  padding-left: 0.8vw;
+  font-size: 1.2vw;
+  text-align: justify;
+  word-spacing: -2px;
+  font-family: Gilroy;
+  color: #dedede90;
+}
+
+.about-rtop {
+  display: flex;
+  width: 100%;
+}
+
+.gif {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+.gif video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skills {
+  padding: 0 1vw;
+}
+.skill {
+  padding: 2vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+.skill h4 {
+  font-size: 2vw;
+  font-family: "am";
+  letter-spacing: 0.7vw;
+}
+.skill ul li {
+  font-size: 1.2vw;
+  font-family: "Gilroy";
+  color: #dedede90;
+}
+.skill .tecnology {
+  display: flex;
+  gap: 5vw;
+}
+.skill .tecnology ul:first-child {
+  text-align: left;
+}
+.skill .tecnology ul:last-child {
+  text-align: right;
+}
+
+.pg3 {
+  width: 100%;
+  padding: 5vh 3vw;
+}
+.works .section-ltop p {
+  padding: 0;
+}
+.work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  padding: 7vw 0;
+}
+.work {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-name h3 {
+  font-size: 3vw;
+  font-family: "AM";
+  color: #fff;
+  text-align: left;
+  letter-spacing: 1vw;
+  position: relative;
+  line-height: 0.9;
+}
+.work-dec {
+  width: 30%;
+}
+.work-dec p {
+  padding: 2vw 0;
+  font-size: 1.1vw;
+  font-family: Gilroy;
+  color: #dedede90;
+}
+.btn {
+  padding: 10px 20px;
+  background: #a18a06;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  font-size: 1vw;
+  font-family: "am";
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+.btn:hover {
+  filter: brightness(0.7);
+}
+.project {
+  position: absolute;
+  width: 40%;
+  height: 40vh;
+  padding: 5vh 3vw;
+  left: 50%;
+  display: none;
+  transform: translateX(-60%);
+}
+.project video {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  scale: 1.2;
+  pointer-events: none;
+}
+.active {
+  display: block;
+}
+.pg4 {
+  width: 100%;
+  padding: 5vh 3vw;
+}
+.contact-container {
+  position: relative;
+  padding: 8vh 0;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form {
+  width: 50%;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 99;
+}
+.form-elem label {
+  font-size: 3vw;
+  font-family: "AM";
+}
+.contact-form form input {
+  padding: 10px 20px;
+  border: 2px solid #dedede50;
+  letter-spacing: 0.2vw;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  font-size: 1vw;
+  font-family: "GIlroy";
+  outline: none;
+}
+.contact-form form input::selection {
+  background: transparent !important;
+}
+.contact-form form textarea {
+  padding: 10px 20px;
+  border: 2px solid #dedede50;
+  letter-spacing: 0.2vw;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  font-size: 1vw;
+  font-family: "Gilroy";
+  outline: none;
+  resize: vertical;
+}
+.contact-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+}
+.contact-video video {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    top: 1vh;
+  }
+  nav > ul > li > a {
+    font-size: 1.7vw;
+  }
+  nav > ul > li > a > i {
+    font-size: 2.5vw;
+  }
+  .gif {
+    height: 20vh;
+  }
+  .pg2 {
+    height: 60vh;
+  }
+  .skill ul li {
+    font-size: 1.5vw;
+  }
+  .skill h4 {
+    font-size: 2.5vw;
+  }
+  .about-dec p {
+    font-size: 1.5vw;
+  }
+  .section-ltop h2 {
+    font-size: 8vw;
+  }
+  .section-ltop p {
+    font-size: 1.9vw;
+  }
+  .work-container {
+    padding: 8vw 0;
+  }
+  .work-dec p {
+    font-size: 1.7vw;
+    line-height: 1.2;
+  }
+  .btn {
+    font-size: 1.5vw;
+  }
+  .contact-form form input {
+    font-size: 1.5vw;
+  }
+  .contact-form form textarea {
+    font-size: 1.5vw;
+  }
+  .pg4 {
+    overflow: hidden;
+  }
+  .contact-video {
+    right: -19%;
+    width: 109%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+    nav {
+        padding: 2vw 7vw;
+    }
+    nav > ul > li > a {
+        font-size: 2.7vw;
+    }
+    nav > ul > li > a >i {
+        font-size: 4vw;
+    }
+    .hero {
+        flex-direction: column;
+        gap: 10vh;
+    }
+    .heroleft {
+        height: fit-content;
+        width: 100%;
+        justify-content: center;
+    }
+    .heroright {
+        height: fit-content;
+        width: 100%;
+    }
+    .heroleft h1 {
+        font-size: 14vw;
+        line-height: 21vw
+    }
+    .heroleft h1::after {
+        top: 10.5vw;
+        font-size: 4vw;
+    }
+    .imgbg {
+        height: 50vw;
+        width: 50vw;
+    }
+    .pg2{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .about-left {
+        width: 100%;
+        gap: 5vh;
+    }
+    .about-right{
+        width: 100%;
+        gap: 4vh;
+    }
+    .section-ltop p {
+        font-size: 4vw;
+    }
+    .section-ltop h2 {
+        font-size: 20vw;
+    }
+    .section-ltop h3 {
+        font-size: 10vw;
+    }
+    .about-dec {
+        height: fit-content;
+    }
+    .about-dec p {
+        font-size: 3vw;
+    }
+    .skill h4 {
+        font-size: 5.5vw;
+    }
+    .work {
+        gap: 1.5vh;
+        flex-direction: column;
+    }
+    .project {
+        position: relative;
+        width: 85%;
+        height: 35vh;
+        padding: 0;
+        left: 0%;
+        display: block;
+        transform: translateX(0%);
+    }
+    .work-dec {
+        width: 100%;
+    }
+    .work-name{
+        width: 100%;
+    }
+    .work-name h3 {
+        font-size: 8vw;
+    }
+    .work-dec p {
+        font-size: 3vw;
+        padding-bottom: 5vw;
+    }
+    .btn {
+        font-size: 3.5vw;
+    }
+    .contact-form form input,.contact-form form textarea {
+        font-size: 3vw;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .contact-video {
+        bottom: -32%;
+        left: -24%;
+        width: 160%;
+    }
+    .work-container {
+        padding: 11vw 0;
+    }
+    .skill {
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .skill ul li {
+        font-size: 3.5vw;
+    }
+    .skill .tecnology {
+        justify-content: space-between;
+    }
+}
