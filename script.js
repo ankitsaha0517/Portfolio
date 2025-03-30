@@ -5,25 +5,25 @@ const data = [
     {
         name: "Duo <br> Studio",
         video: "./video/dustdio.mp4",
-        dec: "This is description",
+        dec: "Developed an interactive web experience with HTML, CSS, and JavaScript, implementing GSAP for seamless animations and enhanced visual appeal.",
         projectLink: "https://ankitsaha0517.github.io/Duo-Studio-clone/"
     },
     {
         name: "Sundown <br> Studio",
         video: "./video/dustdio.mp4",
-        dec: "This is description",
+        dec: "Developed an interactive web experience with HTML, CSS, and JavaScript, implementing GSAP for seamless animations and enhanced visual appeal.",
         projectLink: "https://ankitsaha0517.github.io/sundown-studio-clone/"
     },
     {
         name: "Cynthia <br> Ugwu",
         video: "./video/cynthea.mp4",
-        dec: "This is description",
+        dec: "Developed an interactive web experience with HTML, CSS, and JavaScript, implementing GSAP for seamless animations and enhanced visual appeal.",
         projectLink: "https://ankitsaha0517.github.io/Cynthia-Ugwu-clone/"
     },
     {
         name: "work",
         video: "./video/work.mp4",
-        dec: "This is description",
+        dec: "Developed an interactive web experience with HTML, CSS, and JavaScript, implementing GSAP for seamless animations and enhanced visual appeal.",
         projectLink: "https://github.com/ankitsaha0517/WORKS-studio-clone"
     }
 
