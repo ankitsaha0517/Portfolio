@@ -52,7 +52,30 @@ nav > ul > li > a {
   color: #dedede;
   letter-spacing: 2px;
   text-transform: uppercase;
+  display: inline-block;
+  position: relative;
 }
+nav > ul > li > a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #a18a06;
+  transition: transform 0.25s ease-out;
+}
+nav > ul > li > a:hover::after {
+  transform: scaleX(1);
+}
+nav > ul > li > a::after {
+  transform-origin: bottom right;
+}
+nav > ul > li > a:hover::after {
+  transform-origin: bottom left;
+}
+
 nav > ul > li > a > i {
   font-size: 2vw;
 }
