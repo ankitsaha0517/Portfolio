@@ -543,16 +543,16 @@ nav > ul > li > a > i {
         gap: 1.5vh;
         flex-direction: column;
     }
-    .project {
-        position: relative;
-        width: 85%;
-        height: 35vh;
-        padding: 0;
-        left: 0%;
-        display: block;
-        transform: translateY(0%) translateX(0%);
-        opacity: 1;
-        visibility: visible;
+    .project {        
+      position: relative;
+      width: 85%;
+      height: 35vh;
+      padding: 0;
+      left: 0%;
+      display: block;
+      transform: translateY(0%) translateX(0%);
+      opacity: 1;
+      visibility: visible;
     }
     .work-dec {
         width: 100%;
