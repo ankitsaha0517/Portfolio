@@ -550,8 +550,9 @@ nav > ul > li > a > i {
         padding: 0;
         left: 0%;
         display: block;
-        transform: translateX(0%);
+        transform: translateY(0%) translateX(0%);
         opacity: 1;
+        visibility: visible;
     }
     .work-dec {
         width: 100%;
