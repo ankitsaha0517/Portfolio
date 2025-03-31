@@ -24,7 +24,7 @@ const data = [
         name: "work",
         video: "./video/work.mp4",
         dec: "Developed an interactive web experience with HTML, CSS, and JavaScript, implementing GSAP for seamless animations and enhanced visual appeal.",
-        projectLink: "https://github.com/ankitsaha0517/WORKS-studio-clone"
+        projectLink: "https://ankitsaha0517.github.io/WORKS-studio-clone/"
     }
 
 ];
