@@ -482,7 +482,7 @@ nav > ul > li > a > i {
         font-size: 4vw;
     }
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 10vh;
     }
     .heroleft {
